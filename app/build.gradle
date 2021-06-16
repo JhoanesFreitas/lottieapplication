@@ -44,6 +44,12 @@ dependencies {
 
     Map<String, String> dependencies = rootProject.ext.dependencies
 
+    kapt dependencies.daggerAndroidProcessor
+    kapt dependencies.daggerCompiler
+    kapt dependencies.lifecycleCompiler
+    kaptTest dependencies.daggerCompiler
+    kaptAndroidTest dependencies.daggerCompiler
+
     implementation dependencies.kotlinStdLib
     implementation dependencies.ktx
     implementation dependencies.appCompat
@@ -54,21 +60,19 @@ dependencies {
     implementation dependencies.coroutinesRX
     implementation dependencies.coroutinesAndroid
     implementation dependencies.lottie
-    testImplementation dependencies.squareOkHttp
-    testImplementation dependencies.squareLogging
-    testImplementation dependencies.profiler
-    testImplementation dependencies.squareRetrofit
-    testImplementation dependencies.squareRxAdapter
-    testImplementation dependencies.daggerCompiler
-    testImplementation dependencies.dagger
-    testImplementation dependencies.daggerAndroid
-    testImplementation dependencies.daggerAndroidSupport
-    testImplementation dependencies.daggerAndroidProcessor
-    testImplementation dependencies.viewModelKtx
-    testImplementation dependencies.liveDataKtx
-    testImplementation dependencies.lifecycleKtx
-    testImplementation dependencies.lifecycle
-    testImplementation dependencies.lifecycleCompiler
+    implementation dependencies.squareOkHttp
+    implementation dependencies.squareLogging
+    implementation dependencies.profiler
+    implementation dependencies.squareRetrofit
+    implementation dependencies.squareRxAdapter
+    implementation dependencies.dagger
+    implementation dependencies.daggerAndroid
+    implementation dependencies.daggerAndroidSupport
+    implementation dependencies.viewModelKtx
+    implementation dependencies.liveDataKtx
+    implementation dependencies.lifecycleKtx
+    implementation dependencies.lifecycle
+    implementation dependencies.lifecycleCompiler
 
     androidTestImplementation dependencies.extJunit
     androidTestImplementation dependencies.espresso
