@@ -13,4 +13,19 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="LottieApp.Theme.Fullscreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:actionBarStyle">@style/Widget.Theme.GpPetS.ButtonBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="LottieApp.Theme.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/colorPrimary</item>
+        <item name="fullscreenTextColor">@color/white</item>
+    </style>
 </resources>

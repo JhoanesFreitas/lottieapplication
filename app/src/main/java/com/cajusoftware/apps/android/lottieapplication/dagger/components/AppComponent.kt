@@ -3,6 +3,7 @@ package com.cajusoftware.apps.android.lottieapplication.dagger.components
 import android.app.Application
 import com.cajusoftware.apps.android.lottieapplication.App
 import com.cajusoftware.apps.android.lottieapplication.dagger.modules.ActivityModule
+import com.cajusoftware.apps.android.lottieapplication.dagger.modules.AppModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -13,7 +14,7 @@ import javax.inject.Singleton
 @Component(
     modules = [
         AndroidSupportInjectionModule::class,
-        AppComponent::class,
+        AppModule::class,
         ActivityModule::class
     ]
 )

@@ -9,4 +9,22 @@
         <item name="lottie_fileName">data_arvore.json</item>
         <item name="lottie_loop">true</item>
     </style>
+
+    <style name="LottieApp.Elephant">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="lottie_autoPlay">true</item>
+        <item name="lottie_fileName">elefante.json</item>
+        <item name="lottie_loop">true</item>
+    </style>
+
+    <style name="LottieApp.Elephant.Big">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
+    <style name="Widget.Theme.GpPetS.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
 </resources>
