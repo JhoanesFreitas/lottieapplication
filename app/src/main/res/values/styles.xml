@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LottieApp" />
+
+    <style name="LottieApp.Tree">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="lottie_autoPlay">true</item>
+        <item name="lottie_fileName">data_arvore.json</item>
+        <item name="lottie_loop">true</item>
+    </style>
+</resources>

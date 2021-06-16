@@ -73,3 +73,7 @@ dependencies {
     androidTestImplementation dependencies.extJunit
     androidTestImplementation dependencies.espresso
 }
+
+repositories {
+    mavenCentral()
+}
