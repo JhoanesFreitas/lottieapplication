@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -33,12 +35,34 @@ android {
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.1'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    Map<String, String> dependencies = rootProject.ext.dependencies
+
+    implementation dependencies.kotlinStdLib
+    implementation dependencies.ktx
+    implementation dependencies.appCompat
+    implementation dependencies.material
+    implementation dependencies.constraintLayout
+
+    implementation dependencies.coroutines
+    implementation dependencies.coroutinesRX
+    implementation dependencies.coroutinesAndroid
+    implementation dependencies.lottie
+    testImplementation dependencies.squareOkHttp
+    testImplementation dependencies.squareLogging
+    testImplementation dependencies.profiler
+    testImplementation dependencies.squareRetrofit
+    testImplementation dependencies.squareRxAdapter
+    testImplementation dependencies.daggerCompiler
+    testImplementation dependencies.dagger
+    testImplementation dependencies.daggerAndroid
+    testImplementation dependencies.daggerAndroidSupport
+    testImplementation dependencies.daggerAndroidProcessor
+    testImplementation dependencies.viewModelKtx
+    testImplementation dependencies.liveDataKtx
+    testImplementation dependencies.lifecycleKtx
+    testImplementation dependencies.lifecycle
+    testImplementation dependencies.lifecycleCompiler
+
+    androidTestImplementation dependencies.extJunit
+    androidTestImplementation dependencies.espresso
 }

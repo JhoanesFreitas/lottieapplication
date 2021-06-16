@@ -1,0 +1,48 @@
+ext {
+
+    ktxVersion = '1.5.0'
+    appCompatVersion = '1.3.0'
+    materialVersion = '1.3.0'
+    constraintLayoutVersion = '2.0.4'
+    junitVersion = '4.13.2'
+    expressoVersion = '3.3.0'
+    extJunitVersion = '1.1.2'
+    coroutinesVersion = '1.5.0'
+    lottieVersion = '3.3.0'
+    retrofitVersion = '2.9.0'
+    okHttpVersion = '4.9.1'
+    okHttpProfilerVersion = '1.0.7'
+    daggerVersion = '2.37'
+    lifecycleVersion = '2.2.0'
+
+    dependencies = [
+            kotlinStdLib          : "org.jetbrains.kotlin:kotlin-stdlib:$ktxVersion",
+            ktx                   : "androidx.core:core-ktx:$ktxVersion",
+            appCompat             : "androidx.appcompat:appcompat:$appCompatVersion",
+            material              : "com.google.android.material:material:$materialVersion",
+            constraintLayout      : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            junit                 : "junit:junit:$junitVersion",
+            extJunit              : "androidx.test.ext:junit:$extJunitVersion",
+            espresso              : "androidx.test.espresso:espresso-core:$expressoVersion",
+            coroutines            : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion",
+            coroutinesRX          : "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$coroutinesVersion",
+            coroutinesAndroid     : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
+            lottie                : "com.airbnb.android:lottie:$lottieVersion",
+            squareOkHttp          : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            squareLogging         : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+            profiler              : "com.itkacher.okhttpprofiler:okhttpprofiler:$okHttpProfilerVersion",
+            squareRetrofit        : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            squareRxAdapter       : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            daggerCompiler        : "com.google.dagger:dagger-compiler:$daggerVersion",
+            dagger                : "com.google.dagger:dagger:$daggerVersion",
+            daggerAndroid         : "com.google.dagger:dagger-android:$daggerVersion",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:$daggerVersion",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:$daggerVersion",
+            viewModelKtx          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            liveDataKtx           : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            lifecycleKtx          : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
+            lifecycle             : "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion",
+            lifecycleCompiler     : "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion",
+
+    ]
+}
