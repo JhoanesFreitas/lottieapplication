@@ -3,5 +3,5 @@ package com.cajusoftware.apps.android.lottieapplication.features.road.api.reposi
 import com.cajusoftware.apps.android.lottieapplication.commons.models.responses.CatsInformation
 
 interface CatRepository {
-    suspend fun getData(): Array<CatsInformation>?
+    suspend fun getData(): Array<CatsInformation?>
 }

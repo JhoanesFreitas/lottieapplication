@@ -1,4 +1,4 @@
-package com.cajusoftware.apps.android.lottieapplication.data.api.exts
+package com.cajusoftware.apps.android.lottieapplication.data.exts
 
 import com.cajusoftware.apps.android.lottieapplication.commons.models.responses.RegisterError
 import com.google.gson.Gson

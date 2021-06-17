@@ -2,6 +2,9 @@ ext {
     flavors = [
             CATS_API: [
                     prod: 'https://cat-fact.herokuapp.com/',
+            ],
+            CATS_DATABASE_NAME: [
+                    prod: 'lottie-database',
             ]
     ]
 }

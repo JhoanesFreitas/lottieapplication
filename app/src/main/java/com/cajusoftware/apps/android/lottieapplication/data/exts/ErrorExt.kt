@@ -1,4 +1,4 @@
-package com.cajusoftware.apps.android.lottieapplication.data.api.exts
+package com.cajusoftware.apps.android.lottieapplication.data.exts
 
 import com.cajusoftware.apps.android.lottieapplication.data.api.errors.ApiErrorManager
 import retrofit2.Response

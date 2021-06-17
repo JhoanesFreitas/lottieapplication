@@ -1,5 +1,6 @@
 package com.cajusoftware.apps.android.lottieapplication.commons.models.responses
 
+import com.cajusoftware.apps.android.lottieapplication.db.models.Cat
 import com.google.gson.annotations.SerializedName
 
 data class CatsInformation(
@@ -14,4 +15,23 @@ data class CatsInformation(
     @SerializedName("createdAt") val createdAt: String,
     @SerializedName("used") val used: Boolean,
     @SerializedName("status") val status: Status
-)
+) {
+    fun toCat() = Cat(
+        catId = id,
+        type = type,
+        deleted = deleted,
+        user = user,
+        text = text,
+        v = v,
+        source = source,
+        updateAt = updateAt,
+        createdAt = createdAt,
+        used = used,
+    )
+
+    fun toState() = com.cajusoftware.apps.android.lottieapplication.db.models.Status(
+        catOwnerId = id,
+        verified = status.verified,
+        sentCount = status.sentCount
+    )
+}

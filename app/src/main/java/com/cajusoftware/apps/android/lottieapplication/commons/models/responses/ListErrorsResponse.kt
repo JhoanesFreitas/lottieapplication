@@ -1,6 +1,6 @@
 package com.cajusoftware.apps.android.lottieapplication.commons.models.responses
 
-import com.cajusoftware.apps.android.lottieapplication.data.api.exts.removeBrackets
+import com.cajusoftware.apps.android.lottieapplication.data.exts.removeBrackets
 import com.google.gson.annotations.SerializedName
 
 data class ListErrorsResponse(

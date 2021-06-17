@@ -1,4 +1,4 @@
-package com.cajusoftware.apps.android.lottieapplication.data.api.exts
+package com.cajusoftware.apps.android.lottieapplication.data.exts
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

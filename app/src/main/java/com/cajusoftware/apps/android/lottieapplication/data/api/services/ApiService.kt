@@ -11,5 +11,5 @@ interface ApiService {
 
     @Headers("$CONNECT_TIMEOUT:5000", "$READ_TIMEOUT:5000")
     @GET(FACTS)
-    suspend fun getData(): Array<CatsInformation>?
+    suspend fun getData(): Array<CatsInformation?>
 }

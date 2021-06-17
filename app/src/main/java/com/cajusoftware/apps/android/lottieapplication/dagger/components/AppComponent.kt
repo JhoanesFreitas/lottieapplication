@@ -21,7 +21,8 @@ import javax.inject.Singleton
         RequestModule::class,
         RepositoryModule::class,
         ViewModelModule::class,
-        CoroutineDispatchersModule::class
+        CoroutineDispatchersModule::class,
+        DatabaseModule::class
     ]
 )
 interface AppComponent : AndroidInjector<App> {

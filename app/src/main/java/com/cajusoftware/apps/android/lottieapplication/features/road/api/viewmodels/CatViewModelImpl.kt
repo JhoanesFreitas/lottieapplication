@@ -2,8 +2,8 @@ package com.cajusoftware.apps.android.lottieapplication.features.road.api.viewmo
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.cajusoftware.apps.android.lottieapplication.data.api.exts.emit
-import com.cajusoftware.apps.android.lottieapplication.data.api.exts.safeLaunch
+import com.cajusoftware.apps.android.lottieapplication.data.exts.emit
+import com.cajusoftware.apps.android.lottieapplication.data.exts.safeLaunch
 import com.cajusoftware.apps.android.lottieapplication.features.road.api.repositories.CatRepository
 
 class CatViewModelImpl(

@@ -2,8 +2,8 @@ package com.cajusoftware.apps.android.lottieapplication.data.api.errors.handlers
 
 import com.cajusoftware.apps.android.lottieapplication.commons.enums.Errors
 import com.cajusoftware.apps.android.lottieapplication.commons.models.responses.ListErrorsResponse
-import com.cajusoftware.apps.android.lottieapplication.data.api.exts.convertListToString
-import com.cajusoftware.apps.android.lottieapplication.data.api.exts.toDataClass
+import com.cajusoftware.apps.android.lottieapplication.data.exts.convertListToString
+import com.cajusoftware.apps.android.lottieapplication.data.exts.toDataClass
 
 internal class ApiListErrorHandler : AbstractBodyErrorHandler<ListErrorsResponse>() {
 

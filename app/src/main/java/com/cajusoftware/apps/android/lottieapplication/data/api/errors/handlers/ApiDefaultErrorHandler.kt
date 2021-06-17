@@ -2,7 +2,7 @@ package com.cajusoftware.apps.android.lottieapplication.data.api.errors.handlers
 
 import com.cajusoftware.apps.android.lottieapplication.commons.exceptions.DefaultErrorException
 import com.cajusoftware.apps.android.lottieapplication.commons.models.responses.DefaultErrorResponse
-import com.cajusoftware.apps.android.lottieapplication.data.api.exts.toDataClass
+import com.cajusoftware.apps.android.lottieapplication.data.exts.toDataClass
 
 internal class ApiDefaultErrorHandler : AbstractBodyErrorHandler<DefaultErrorResponse>() {
 

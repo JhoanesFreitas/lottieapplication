@@ -20,6 +20,8 @@ ext {
     rxKotlin = '2.4.0'
     rxAndroid = '2.1.0'
 
+    roomVersion = '2.3.0'
+
     dependencies = [
             kotlinStdLib          : "org.jetbrains.kotlin:kotlin-stdlib:$ktxVersion",
             ktx                   : "androidx.core:core-ktx:$ktxVersion",
@@ -52,6 +54,9 @@ ext {
             googleGson            : "com.google.code.gson:gson:$gson",
             rxKotlin              : "io.reactivex.rxjava2:rxkotlin:$rxKotlin",
             rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroid",
-
+            room                  : "androidx.room:room-runtime:$roomVersion",
+            roomCompiler          : "androidx.room:room-compiler:$roomVersion",
+            roomKtx               : "androidx.room:room-ktx:$roomVersion",
+            roomTest              : "androidx.room:room-testing:$roomVersion"
     ]
 }
