@@ -14,6 +14,11 @@ ext {
     okHttpProfilerVersion = '1.0.7'
     daggerVersion = '2.37'
     lifecycleVersion = '2.2.0'
+    gson = '2.8.5'
+    squareConverterGsonVersion = '2.9.0'
+
+    rxKotlin = '2.4.0'
+    rxAndroid = '2.1.0'
 
     dependencies = [
             kotlinStdLib          : "org.jetbrains.kotlin:kotlin-stdlib:$ktxVersion",
@@ -33,6 +38,7 @@ ext {
             profiler              : "com.itkacher.okhttpprofiler:okhttpprofiler:$okHttpProfilerVersion",
             squareRetrofit        : "com.squareup.retrofit2:retrofit:$retrofitVersion",
             squareRxAdapter       : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            squareConverterGson   : "com.squareup.retrofit2:converter-gson:$squareConverterGsonVersion",
             daggerCompiler        : "com.google.dagger:dagger-compiler:$daggerVersion",
             dagger                : "com.google.dagger:dagger:$daggerVersion",
             daggerAndroid         : "com.google.dagger:dagger-android:$daggerVersion",
@@ -43,6 +49,9 @@ ext {
             lifecycleKtx          : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
             lifecycle             : "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion",
             lifecycleCompiler     : "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion",
+            googleGson            : "com.google.code.gson:gson:$gson",
+            rxKotlin              : "io.reactivex.rxjava2:rxkotlin:$rxKotlin",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroid",
 
     ]
 }

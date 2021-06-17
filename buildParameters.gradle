@@ -1,0 +1,7 @@
+ext {
+    flavors = [
+            CATS_API: [
+                    prod: 'https://cat-fact.herokuapp.com/',
+            ]
+    ]
+}

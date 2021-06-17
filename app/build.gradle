@@ -18,12 +18,32 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    applicationVariants.all { variant ->
+        variant.productFlavors.each { flavor ->
+            println("===Mobile-build===")
+            def flavorData = rootProject.ext["flavors"]
+            flavorData.each {
+                variant.buildConfigField "String", it.key, "\"${it.getProperties().values()[0][flavor.name]}\""
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "CATS_API", ""
         }
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        prod {
+            dimension "default"
+            manifestPlaceholders = [appIcon: "@mipmap/ic_laucher", appRoundIcon: "@mipmap/ic_launcher"]
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -65,6 +85,7 @@ dependencies {
     implementation dependencies.profiler
     implementation dependencies.squareRetrofit
     implementation dependencies.squareRxAdapter
+    implementation dependencies.squareConverterGson
     implementation dependencies.dagger
     implementation dependencies.daggerAndroid
     implementation dependencies.daggerAndroidSupport
@@ -73,6 +94,9 @@ dependencies {
     implementation dependencies.lifecycleKtx
     implementation dependencies.lifecycle
     implementation dependencies.lifecycleCompiler
+    implementation dependencies.googleGson
+    implementation dependencies.rxKotlin
+    implementation dependencies.rxAndroid
 
     androidTestImplementation dependencies.extJunit
     androidTestImplementation dependencies.espresso
