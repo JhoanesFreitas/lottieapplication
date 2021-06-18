@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black_overlay">#66000000</color>
     <color name="colorPrimary">#FF018786</color>
+    <color name="number_color">#784F17</color>
 </resources>
