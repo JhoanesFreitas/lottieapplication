@@ -4,8 +4,8 @@
     <style name="LottieApp" />
 
     <style name="LottieApp.Tree">
-        <item name="android:layout_width">64dp</item>
-        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
         <item name="lottie_autoPlay">true</item>
         <item name="lottie_fileName">data_arvore.json</item>
         <item name="lottie_loop">true</item>
