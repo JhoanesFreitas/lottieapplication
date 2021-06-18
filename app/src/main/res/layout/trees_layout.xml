@@ -14,7 +14,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/bottom_tree_2"
         style="@style/LottieApp.Tree"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="178dp"
         app:layout_constraintBottom_toTopOf="@id/bottom_tree_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bottom_tree_7" />

@@ -6,6 +6,8 @@
     android:background="@drawable/ic_grass"
     tools:context=".features.road.ui.MainActivity">
 
+    <include layout="@layout/road_layout" />
+
     <include layout="@layout/trees_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
