@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/bottom_road_1"
         style="@style/LottieApp.Road.Vertical"
-        android:layout_marginEnd="104dp"
+        android:layout_marginEnd="180dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -50,14 +50,21 @@
         app:layout_constraintEnd_toStartOf="@+id/bottom_curve_1" />
 
     <ImageView
-        android:id="@+id/bottom_curve_2"
-        style="@style/LottieApp.Road.Curve.Bottom.Left"
+        android:id="@+id/bottom_road_18"
+        style="@style/LottieApp.Road.Horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_road_2"
         app:layout_constraintEnd_toStartOf="@+id/bottom_road_2" />
 
+    <ImageView
+        android:id="@+id/bottom_curve_2"
+        style="@style/LottieApp.Road.Curve.Bottom.Left"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_18"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_road_18" />
+
     <RelativeLayout
         android:id="@+id/bottom_step_2"
-        style="@style/LottieApp.Road.Step.Vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/bottom_curve_2"
         app:layout_constraintEnd_toEndOf="@+id/bottom_curve_2">
 
@@ -99,10 +106,22 @@
         app:layout_constraintStart_toEndOf="@+id/bottom_road_3" />
 
     <ImageView
-        android:id="@+id/bottom_curve_4"
-        style="@style/LottieApp.Road.Curve.Bottom.Right"
+        android:id="@+id/bottom_road_15"
+        style="@style/LottieApp.Road.Horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_road_4"
         app:layout_constraintStart_toEndOf="@+id/bottom_road_4" />
+
+    <ImageView
+        android:id="@+id/bottom_road_23"
+        style="@style/LottieApp.Road.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_15"
+        app:layout_constraintStart_toEndOf="@+id/bottom_road_15" />
+
+    <ImageView
+        android:id="@+id/bottom_curve_4"
+        style="@style/LottieApp.Road.Curve.Bottom.Right"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_23"
+        app:layout_constraintStart_toEndOf="@+id/bottom_road_23" />
 
     <ImageView
         android:id="@+id/bottom_road_5"
@@ -111,10 +130,16 @@
         app:layout_constraintStart_toStartOf="@+id/bottom_curve_4" />
 
     <ImageView
+        android:id="@+id/bottom_road_17"
+        style="@style/LottieApp.Road.Vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_road_5"
+        app:layout_constraintStart_toStartOf="@+id/bottom_road_5" />
+
+    <ImageView
         android:id="@+id/bottom_curve_5"
         style="@style/LottieApp.Road.Curve.Top.Left"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_road_5"
-        app:layout_constraintEnd_toEndOf="@+id/bottom_road_5" />
+        app:layout_constraintBottom_toTopOf="@+id/bottom_road_17"
+        app:layout_constraintEnd_toEndOf="@+id/bottom_road_17" />
 
     <ImageView
         android:id="@+id/bottom_road_6"
@@ -122,12 +147,24 @@
         app:layout_constraintBottom_toBottomOf="@+id/bottom_curve_5"
         app:layout_constraintEnd_toStartOf="@+id/bottom_curve_5" />
 
+    <ImageView
+        android:id="@+id/bottom_road_7"
+        style="@style/LottieApp.Road.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_6"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_road_6" />
+
+    <ImageView
+        android:id="@+id/bottom_road_25"
+        style="@style/LottieApp.Road.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_7"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_road_7" />
+
     <RelativeLayout
         android:id="@+id/bottom_step_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_6"
-        app:layout_constraintEnd_toStartOf="@+id/bottom_road_6">
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_25"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_road_25">
 
         <ImageView
             android:id="@+id/image_3"
@@ -161,7 +198,7 @@
         app:layout_constraintStart_toStartOf="@+id/bottom_curve_6" />
 
     <ImageView
-        android:id="@+id/bottom_road_9"
+        android:id="@+id/bottom_road_32"
         style="@style/LottieApp.Road.Vertical"
         app:layout_constraintBottom_toTopOf="@+id/bottom_road_8"
         app:layout_constraintStart_toStartOf="@+id/bottom_road_8" />
@@ -170,8 +207,8 @@
         android:id="@+id/bottom_step_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_road_9"
-        app:layout_constraintEnd_toEndOf="@+id/bottom_road_9">
+        app:layout_constraintBottom_toTopOf="@+id/bottom_road_32"
+        app:layout_constraintEnd_toEndOf="@+id/bottom_road_32">
 
         <ImageView
             android:id="@+id/image_4"
@@ -204,11 +241,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/bottom_curve_7"
         app:layout_constraintEnd_toStartOf="@+id/bottom_curve_7" />
 
+    <ImageView
+        android:id="@+id/bottom_road_22"
+        style="@style/LottieApp.Road.Vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_curve_8"
+        app:layout_constraintStart_toStartOf="@+id/bottom_curve_8" />
+
     <RelativeLayout
         android:id="@+id/bottom_step_5"
-        style="@style/LottieApp.Road.Step.Vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_curve_8"
-        app:layout_constraintEnd_toEndOf="@+id/bottom_curve_8">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_road_22"
+        app:layout_constraintEnd_toEndOf="@+id/bottom_road_22">
 
         <ImageView
             android:id="@+id/image_5"
@@ -229,6 +273,7 @@
             android:textSize="24sp" />
     </RelativeLayout>
 
+
     <ImageView
         android:id="@+id/bottom_curve_9"
         style="@style/LottieApp.Road.Curve.Top.Right"
@@ -248,27 +293,27 @@
         app:layout_constraintStart_toEndOf="@+id/bottom_road_10" />
 
     <ImageView
-        android:id="@+id/bottom_curve_10"
-        style="@style/LottieApp.Road.Curve.Bottom.Right"
+        android:id="@+id/bottom_road_28"
+        style="@style/LottieApp.Road.Horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_road_11"
         app:layout_constraintStart_toEndOf="@+id/bottom_road_11" />
+
+    <ImageView
+        android:id="@+id/bottom_road_29"
+        style="@style/LottieApp.Road.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_28"
+        app:layout_constraintStart_toEndOf="@+id/bottom_road_28" />
+
+    <ImageView
+        android:id="@+id/bottom_curve_10"
+        style="@style/LottieApp.Road.Curve.Bottom.Right"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_road_29"
+        app:layout_constraintStart_toEndOf="@+id/bottom_road_29" />
 
     <ImageView
         android:id="@+id/bottom_road_12"
         style="@style/LottieApp.Road.Vertical"
         app:layout_constraintBottom_toTopOf="@+id/bottom_curve_10"
         app:layout_constraintStart_toStartOf="@+id/bottom_curve_10" />
-
-    <ImageView
-        android:id="@+id/bottom_road_13"
-        style="@style/LottieApp.Road.Vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_road_12"
-        app:layout_constraintStart_toStartOf="@+id/bottom_road_12" />
-
-    <ImageView
-        android:id="@+id/bottom_road_14"
-        style="@style/LottieApp.Road.Vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_road_13"
-        app:layout_constraintStart_toStartOf="@+id/bottom_road_13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

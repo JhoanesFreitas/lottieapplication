@@ -17,10 +17,14 @@
         android:theme="@style/Theme.LottieApplication"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".features.road.ui.MainActivity" />
+        <activity
+            android:name=".features.road.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".ui.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="fullSensor"
             android:theme="@style/LottieApp.Theme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
