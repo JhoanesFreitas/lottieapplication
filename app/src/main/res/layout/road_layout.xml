@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/bottom_road_1"
-        style="@style/LottieApp.Road.Vertical"
+        style="@style/LottieApp.Road.Vertical.Small"
         android:layout_marginEnd="74dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

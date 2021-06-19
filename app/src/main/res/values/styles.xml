@@ -35,7 +35,7 @@
     </style>
 
     <style name="LottieApp.Road.Vertical.Small">
-        <item name="android:layout_height">58dp</item>
+        <item name="android:layout_height">32dp</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:src">@drawable/ic_vertical_road</item>
     </style>
