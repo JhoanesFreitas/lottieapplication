@@ -12,14 +12,12 @@
     </style>
 
     <style name="LottieApp.Road">
-        <item name="android:layout_width">92dp</item>
-        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:scaleType">fitXY</item>
     </style>
 
     <style name="LottieApp.Road.Horizontal">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">76dp</item>
         <item name="android:src">@drawable/ic_horizontal_road</item>
     </style>
 
@@ -30,7 +28,6 @@
     <style name="LottieApp.Road.Step" />
 
     <style name="LottieApp.Road.Step.Horizontal">
-        <item name="android:layout_height">76dp</item>
         <item name="android:src">@drawable/ic_horizontal_step</item>
     </style>
 
@@ -41,14 +38,13 @@
     </style>
 
     <style name="LottieApp.Road.Step.Vertical">
-        <item name="android:layout_height">70dp</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:src">@drawable/ic_vertical_step</item>
     </style>
 
     <style name="LottieApp.Road.Curve">
-        <item name="android:layout_width">88dp</item>
-        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">84dp</item>
     </style>
 
     <style name="LottieApp.Road.Curve.Top" />
@@ -68,8 +64,6 @@
     </style>
 
     <style name="LottieApp.Road.Curve.Bottom.Left">
-        <item name="android:layout_width">88dp</item>
-        <item name="android:layout_height">76dp</item>
         <item name="android:src">@drawable/ic_bottom_left</item>
     </style>
 
