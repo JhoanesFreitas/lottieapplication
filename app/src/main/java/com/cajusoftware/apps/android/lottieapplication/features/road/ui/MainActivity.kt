@@ -3,6 +3,8 @@ package com.cajusoftware.apps.android.lottieapplication.features.road.ui
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.cajusoftware.apps.android.lottieapplication.R
 import java.io.Serializable
@@ -21,5 +23,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val cats = intent.getSerializableExtra(DATA)
+    }
+
+    fun onClick(v: View) {
+        Log.d("Click-ok", v.id.toString())
     }
 }

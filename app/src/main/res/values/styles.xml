@@ -27,7 +27,10 @@
         <item name="android:src">@drawable/ic_vertical_road</item>
     </style>
 
-    <style name="LottieApp.Road.Step" />
+    <style name="LottieApp.Road.Step">
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
 
     <style name="LottieApp.Road.Step.Horizontal">
         <item name="android:layout_height">64dp</item>

@@ -5,4 +5,6 @@
     <string name="step_three">3</string>
     <string name="step_four">4</string>
     <string name="step_five">5</string>
+    <string name="error_label">Não foi possível acessar agora...</string>
+    <string name="try_again">Tentar novamente</string>
 </resources>

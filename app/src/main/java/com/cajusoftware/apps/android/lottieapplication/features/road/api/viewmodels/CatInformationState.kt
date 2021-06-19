@@ -6,4 +6,5 @@ import com.cajusoftware.apps.android.lottieapplication.commons.models.responses.
 data class CatInformationState(
     val isLoading: LiveData<Boolean>,
     val result: LiveData<Array<CatsInformation?>>,
+    val isError: LiveData<Unit>
 )

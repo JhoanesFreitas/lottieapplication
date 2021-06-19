@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="view_default_margin">16dp</dimen>
+    <dimen name="app_bar_height">16dp</dimen>
+    <dimen name="middle_margin">48dp</dimen>
 </resources>

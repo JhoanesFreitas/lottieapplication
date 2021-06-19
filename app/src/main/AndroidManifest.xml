@@ -20,7 +20,8 @@
         <activity
             android:name=".features.road.ui.MainActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="fullSensor"
+            android:theme="@style/LottieApp.Theme.Fullscreen"/>
         <activity
             android:name=".ui.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

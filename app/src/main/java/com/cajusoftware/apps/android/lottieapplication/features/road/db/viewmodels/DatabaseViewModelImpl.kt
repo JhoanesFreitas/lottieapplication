@@ -17,7 +17,7 @@ class DatabaseViewModelImpl(
         DatabaseState(
             isLoading = MutableLiveData(),
             result = MutableLiveData(),
-            goToApi = MutableLiveData()
+            goToApi = MutableLiveData(),
         )
 
     override fun insertData(cat: Cat, status: Status) = safeAsync {
