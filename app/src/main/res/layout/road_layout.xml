@@ -253,11 +253,11 @@
         app:layout_constraintBottom_toBottomOf="@+id/bottom_road_11"
         app:layout_constraintStart_toEndOf="@+id/bottom_road_11" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/bottom_road_12"-->
-<!--        style="@style/LottieApp.Road.Vertical"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/bottom_curve_10"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/bottom_curve_10" />-->
+    <ImageView
+        android:id="@+id/bottom_road_12"
+        style="@style/LottieApp.Road.Vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_curve_10"
+        app:layout_constraintStart_toStartOf="@+id/bottom_curve_10" />
 
 <!--    <ImageView-->
 <!--        android:id="@+id/bottom_road_13"-->
