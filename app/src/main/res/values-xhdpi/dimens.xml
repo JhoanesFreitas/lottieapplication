@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ic_height">56dp</dimen>
+    <dimen name="ic_height_vertical_road">32dp</dimen>
+    <dimen name="ic_width">60dp</dimen>
+    <dimen name="ic_height_small_road">12dp</dimen>
+    <dimen name="default_margin_end">88dp</dimen>
+
+    <dimen name="ic_height_tree">68dp</dimen>
+    <dimen name="ic_width_tree">68dp</dimen>
+</resources>

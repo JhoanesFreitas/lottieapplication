@@ -4,8 +4,8 @@
     <style name="LottieApp" />
 
     <style name="LottieApp.Tree">
-        <item name="android:layout_width">68dp</item>
-        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_width">@dimen/ic_width_tree</item>
+        <item name="android:layout_height">@dimen/ic_height_tree</item>
         <item name="lottie_autoPlay">true</item>
         <item name="lottie_fileName">data_arvore.json</item>
         <item name="lottie_loop">true</item>
@@ -35,7 +35,7 @@
     </style>
 
     <style name="LottieApp.Road.Vertical.Small">
-        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_height">@dimen/ic_height_small_road</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:src">@drawable/ic_vertical_road</item>
     </style>
