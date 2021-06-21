@@ -7,4 +7,5 @@
     <string name="step_five">5</string>
     <string name="error_label">Não foi possível acessar agora...</string>
     <string name="try_again">Tentar novamente</string>
+    <string name="ok">Ok</string>
 </resources>

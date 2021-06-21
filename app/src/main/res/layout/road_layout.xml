@@ -207,10 +207,10 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_road_12"
         app:layout_constraintStart_toStartOf="@+id/bottom_road_12" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/bottom_road_14"-->
-<!--        style="@style/LottieApp.Road.Vertical"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/bottom_road_13"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/bottom_road_13" />-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/bottom_road_14"-->
+    <!--        style="@style/LottieApp.Road.Vertical"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/bottom_road_13"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/bottom_road_13" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
