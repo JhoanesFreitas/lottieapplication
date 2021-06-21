@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/image"
+    android:layout_alignTop="@+id/image"
+    android:layout_alignEnd="@+id/image"
+    android:layout_alignBottom="@+id/image"
+    android:layout_margin="1dp"
+    android:gravity="center"
+    android:text="@string/step_one"
+    android:textColor="@color/number_color"
+    android:textSize="24sp" />

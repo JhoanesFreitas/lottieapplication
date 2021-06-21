@@ -25,7 +25,9 @@
         <item name="android:src">@drawable/ic_vertical_road</item>
     </style>
 
-    <style name="LottieApp.Road.Step">
+    <style name="LottieApp.Road.Step" />
+
+    <style name="LottieApp.Road.Step.Context">
         <item name="android:clickable">true</item>
         <item name="android:onClick">onClick</item>
     </style>
