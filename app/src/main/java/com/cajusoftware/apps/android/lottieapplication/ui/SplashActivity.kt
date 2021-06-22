@@ -6,10 +6,12 @@ import android.view.View
 import com.cajusoftware.apps.android.lottieapplication.R
 import com.cajusoftware.apps.android.lottieapplication.data.exts.observe
 import com.cajusoftware.apps.android.lottieapplication.db.models.BaseModel
+import com.cajusoftware.apps.android.lottieapplication.db.models.CatAndStatus
 import com.cajusoftware.apps.android.lottieapplication.features.road.api.viewmodels.CatViewModel
 import com.cajusoftware.apps.android.lottieapplication.features.road.db.viewmodels.DatabaseViewModel
 import com.cajusoftware.apps.android.lottieapplication.features.road.ui.MainActivity
 import kotlinx.android.synthetic.main.activity_splash.*
+import java.io.Serializable
 import javax.inject.Inject
 
 class SplashActivity : BaseActivity() {
@@ -84,11 +86,12 @@ class SplashActivity : BaseActivity() {
 
         observe(viewState.result) {
             Log.d("Log", it.toString())
-            val data = mutableListOf<BaseModel>()
+            val data = mutableListOf<Serializable>()
 
             it.forEach { catInformation ->
                 catInformation?.let { cat ->
                     databaseViewModel.insertData(cat.toCat(), cat.toState())
+                    data.add(CatAndStatus(cat.toCat(), cat.toState()))
                 }
             }
 
