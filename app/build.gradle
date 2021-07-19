@@ -63,6 +63,10 @@ android {
             }
         }
     }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -109,10 +113,24 @@ dependencies {
     implementation dependencies.room
     implementation dependencies.roomKtx
 
+    implementation project(':lottietest')
+    testImplementation project(':lottietest')
     testImplementation dependencies.roomTest
+    testImplementation dependencies.mockk
+    testImplementation dependencies.testCoroutine
 
+//    testImplementation "androidx.arch.core:core-testing:2.1.0"
+
+    androidTestImplementation project(':lottietest')
+    androidTestImplementation(dependencies.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
     androidTestImplementation dependencies.extJunit
     androidTestImplementation dependencies.espresso
+    androidTestImplementation dependencies.espressoIntents
+    androidTestImplementation dependencies.espressoContrib
+    androidTestImplementation dependencies.mockkAndroid
+
 }
 
 repositories {

@@ -1,11 +1,12 @@
 package com.cajusoftware.apps.android.lottieapplication.ui
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.cajusoftware.apps.android.lottieapplication.R
 import com.cajusoftware.apps.android.lottieapplication.data.exts.observe
-import com.cajusoftware.apps.android.lottieapplication.db.models.BaseModel
 import com.cajusoftware.apps.android.lottieapplication.db.models.CatAndStatus
 import com.cajusoftware.apps.android.lottieapplication.features.road.api.viewmodels.CatViewModel
 import com.cajusoftware.apps.android.lottieapplication.features.road.db.viewmodels.DatabaseViewModel
@@ -21,6 +22,11 @@ class SplashActivity : BaseActivity() {
 
     @Inject
     lateinit var databaseViewModel: DatabaseViewModel
+
+    companion object {
+        fun startIntent(context: Context) =
+            Intent(context, SplashActivity::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,6 +78,7 @@ class SplashActivity : BaseActivity() {
                     this@SplashActivity, it.toTypedArray()
                 )
             )
+            finish()
         }
     }
 
@@ -100,6 +107,7 @@ class SplashActivity : BaseActivity() {
                     this@SplashActivity, data.toTypedArray()
                 )
             )
+            finish()
         }
 
         observe(viewState.isError) {

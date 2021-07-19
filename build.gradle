@@ -7,7 +7,7 @@ buildscript {
         kotlin_version = '1.5.10'
     }
 
-    ext.android_plugin_version = '4.2.1'
+    ext.android_plugin_version = '4.2.2'
 
     repositories {
         google()

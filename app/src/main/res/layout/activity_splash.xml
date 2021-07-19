@@ -10,6 +10,7 @@
 
     <com.airbnb.lottie.LottieAnimationView
         style="@style/LottieApp.Elephant.Big"
+        android:id="@+id/elephant_animation"
         android:layout_marginBottom="@dimen/view_default_margin"
         app:layout_constraintBottom_toTopOf="@+id/fullscreen_content"
         app:layout_constraintEnd_toEndOf="parent"

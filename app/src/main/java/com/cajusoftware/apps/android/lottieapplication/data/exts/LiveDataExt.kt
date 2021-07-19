@@ -10,7 +10,10 @@ import androidx.lifecycle.Observer
 fun <T> LiveData<T>.emit(value: T) {
     require(this is MutableLiveData) { "$this isn't a valid MutableLiveData instance" }
 
-    this.value = value
+    try {
+        this.value = value
+    } catch (e: NullPointerException) {
+    }
 }
 
 fun <T> LifecycleOwner.observe(liveData: LiveData<T>, action: (t: T) -> Unit) {

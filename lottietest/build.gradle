@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+android {
+
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    Map<String, String> dependencies = rootProject.ext.dependencies
+
+    kapt dependencies.daggerAndroidProcessor
+    kapt dependencies.daggerCompiler
+
+    kaptTest dependencies.daggerCompiler
+    kaptAndroidTest dependencies.daggerCompiler
+
+    implementation dependencies.ktx
+    implementation dependencies.dagger
+    implementation dependencies.daggerAndroid
+    implementation dependencies.daggerAndroidSupport
+
+    implementation dependencies.testCoroutine
+
+    testImplementation dependencies.mockk
+    testImplementation dependencies.testCoroutine
+
+    testImplementation dependencies.extJunit
+    api dependencies.espresso
+    api dependencies.espressoIntents
+    api dependencies.espressoContrib
+    implementation dependencies.testMockWebServer
+    implementation dependencies.coroutines
+
+    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
+}
